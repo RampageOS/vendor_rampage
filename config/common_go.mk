@@ -2,4 +2,4 @@
 PRODUCT_TYPE := go
 
 # Inherit full common Bliss stuff
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/rampage/config/common.mk)

@@ -7,7 +7,7 @@ EOF
 
 function repopick() {
     T=$(gettop)
-    $T/vendor/aosp/build/tools/repopick.py $@
+    $T/vendor/rampage/build/tools/repopick.py $@
 }
 
 function gerrit()

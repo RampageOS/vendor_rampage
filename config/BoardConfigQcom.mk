@@ -1,5 +1,5 @@
 # Bring in Qualcomm helper macros
-include vendor/aosp/build/core/qcom_utils.mk
+include vendor/rampage/build/core/qcom_utils.mk
 
 # Platform names
 KONA := kona #SM8250
