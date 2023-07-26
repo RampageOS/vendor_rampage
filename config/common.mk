@@ -78,6 +78,7 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     VisualizationWallpapers \
     librs_jni \
+    monocles \
     Stk \
     Recorder \
     ExactCalculator \
