@@ -18,8 +18,11 @@ EXTENDED_BUILD_TYPE ?= UNOFFICIAL
 
 ifeq ($(EXTENDED_BUILD_TYPE), OFFICIAL)
 
-# AEXOTA
-$(call inherit-product-if-exists, vendor/rampage/config/ota.mk)
+#$(call inherit-product-if-exists, vendor/rampage/config/ota.mk)
+
+#updater
+PRODUCT_PACKAGES += \
+    Updates
 
 endif
 
