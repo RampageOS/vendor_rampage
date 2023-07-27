@@ -1,11 +1,11 @@
 android_app_import {
-    name: "monocles",
+    name: "via-browser",
 
     overrides: ["Browser2"],
     dex_preopt: {
         enabled: false,
     },
-    apk: "monocles/monocles.apk",
+    apk: "via/via-release.apk",
     presigned: true,
 
 }
