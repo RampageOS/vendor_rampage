@@ -82,5 +82,6 @@ aex: otapkg
 	@echo -e ${CL_BLD}${CL_RED}"=======================================-Package complete-======================================="${CL_RED}
 	@echo -e ${CL_BLD}${CL_YLW}"Zip: "${CL_YLW} $(TARGET_PACKAGE)-$(shell $(DATE_FROM_FILE) +%Y%m%d-%H%M).zip ${CL_RST}
 	@echo -e ${CL_BLD}${CL_YLW}"MD5: "${CL_YLW}" `cat $(TARGET_PACKAGE)-$(shell $(DATE_FROM_FILE) +%Y%m%d-%H%M).zip.md5sum | awk '{print $$1}' `"${CL_RST}
-	@echo -e ${CL_BLD}${CL_YLW}"Size:"${CL_YLW}" `du -sh $(TARGET_PACKAGE)-$(shell $(DATE_FROM_FILE) +%Y%m%d-%H%M).zip | awk '{print $$1}' `"${CL_RST}
+	@echo -e ${CL_BLD}${CL_YLW}"Size:"${CL_YLW}" `du -b $(TARGET_PACKAGE)-$(shell $(DATE_FROM_FILE) +%Y%m%d-%H%M).zip | awk '{print $$1}' `"${CL_RST}
+	@echo -e ${CL_BLD}${CL_YLW}"DateTime:"${CL_YLW} `grep ro.system.build.date.utc $(OUT_DIR)/target/product/$(TARGET_DEVICE)/system/build.prop | cut -d= -f2` ${CL_RED}
 	@echo -e ${CL_BLD}${CL_RED}"================================================================================================"${CL_RST}
