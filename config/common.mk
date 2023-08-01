@@ -79,6 +79,7 @@ PRODUCT_PACKAGES += \
     VisualizationWallpapers \
     librs_jni \
     via-browser \
+    ViMusic \
     Stk \
     Recorder \
     ExactCalculator \

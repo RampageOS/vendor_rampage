@@ -9,3 +9,13 @@ android_app_import {
     presigned: true,
 
 }
+android_app_import {
+    name: "ViMusic",
+
+    dex_preopt: {
+        enabled: false,
+    },
+    apk: "ViMusic/Music.apk",
+    presigned: true,
+
+}
