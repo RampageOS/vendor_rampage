@@ -30,7 +30,7 @@ endif
 endif
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.extended.ota.version_code=rifle-beta
+    ro.extended.ota.version_code=rifle-1.0
 
 endif
 
